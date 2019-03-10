@@ -8,12 +8,7 @@
 </head>
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
-
-    <script type="text/javascript">
-        var socket = io('http://localhost:3000');
-        
-        socket.on('tweet', function(data){console.log(data)});
-        socket.on('like',function(data){console.log(data)})
-    </script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
 </body>
 </html>
