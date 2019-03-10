@@ -1,0 +1,52 @@
+/* Add mobile styles for the component here.  */
+.logo-container {
+    background-color: #F18805;
+    height: 50%;
+    width: 100%;
+}
+.login-container {
+    height: 100%;
+    background-color: white;
+    padding-top: 100px; 
+}
+
+.app-title {
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.logo-sub-title {
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.logo {
+    margin-top: 50px;
+    height: 300px;
+    width: 300px;
+}
+
+.input::placeholder {
+    color:  darkgray;
+}
+
+.input-style {
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom-width: 1;
+    border-color: darkgray; 
+}
+
+.btn-login {
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+    background-color: #F18805;
+    color: white;
+    font-weight: bold;
+}

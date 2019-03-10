@@ -1,0 +1,25 @@
+{
+    "version": "0.1.0",
+    "command": "dotnet",
+    "isShellCommand": true,
+    "args": [],
+    "tasks": [
+        {
+            "taskName": "test",
+            "args": [
+                "${workspaceRoot}/RescueSolution.Test/RescueSolution.Test.csproj"
+            ],
+            "isTestCommand": true,
+            "showOutput": "always",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "build",
+            "args": [
+                "${workspaceRoot}/RescueSolution.Web/RescueSolution.Web.csproj"
+            ],
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

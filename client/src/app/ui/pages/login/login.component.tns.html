@@ -1,0 +1,32 @@
+<StackLayout>
+    <StackLayout class="logo-container">
+        <Label text="EMERGÊNCIA 193" class="h1 text-center app-title" textWrap="true"></Label>
+        <Image src="~/assets/images/logo.png" class="logo"></Image>
+        <Label text="Corpo de Bombeiros" class="h2 text-center logo-sub-title" textWrap="true"></Label>
+    </StackLayout>
+    <StackLayout class="login-container">
+        <FlexLayout alignItems="center" justifyContent="center" alignContent="center">
+            <TextField hint="CPF" 
+                text="{{ cpf }}"
+                secure="false"
+                keyboardType="number"
+                returnKeyType="next" 
+                (returnPress)="onReturnPress($event)"
+                autocorrect="false"
+                maxLength="14"
+                (textChange)="onCPFChange($event)"
+                class="input-style"></TextField>
+            <TextField hint="Nome" 
+                text="{{ name }}"
+                secure="false"
+                keyboardType="datetime"
+                returnKeyType="done" 
+                (returnPress)="login()"
+                autocorrect="false"
+                maxLength="10"
+                (textChange)="onNameChange($event)"
+                class="input input-border input-style"></TextField>
+            <Button text="ENTRAR" class="btn btn-login" (tap)="login()"></Button>
+        </FlexLayout>
+    <StackLayout>
+<StackLayout>

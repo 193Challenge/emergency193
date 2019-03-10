@@ -1,0 +1,22 @@
+
+<FlexboxLayout flexDirection="column" class="container">
+    <FlexboxLayout class="flex-item" (tap)="accident()">
+        <Image src="~/assets/images/accident.png" class="btn-icon"></Image>
+        <Label text="Acidente" class="h1 text-center btn-label" textWrap="true"></Label>
+    </FlexboxLayout>
+    <FlexboxLayout class="flex-item">
+        <Image src="~/assets/images/flame.png" class="btn-icon"></Image>
+        <Label text="Incêndio" class="h1 text-center btn-label" textWrap="true"></Label>
+    </FlexboxLayout>
+    <FlexboxLayout class="flex-item">
+        <Image src="~/assets/images/cardiogram.png" class="btn-icon"></Image>
+        <FlexboxLayout flexDirection="column">
+            <Label text="PCR" class="h1 text-center btn-label" textWrap="true"></Label>
+            <Label text="Parada Cardiorrespiratória" class="h3 text-center btn-label" textWrap="true"></Label>
+        </FlexboxLayout>
+    </FlexboxLayout>
+    <FlexboxLayout class="flex-item">
+        <Image src="~/assets/images/emergency-kit.png" class="btn-icon"></Image>
+        <Label text="Outro" class="h1 text-center btn-label" textWrap="true"></Label>
+    </FlexboxLayout>     
+</FlexboxLayout>

@@ -1,0 +1,60 @@
+<ActionBar title="Informações Necessárias" class="action-bar" actionBarHidden="true">
+</ActionBar>
+
+<FlexboxLayout flexDirection="column" backgroundColor="white">
+    <ContentView class="mapbox">
+        <Mapbox #mapbox
+            accessToken="pk.eyJ1IjoiamF5bWVwcmV0byIsImEiOiJjanQzM2prbTcxN3MyNDRsams2OGVuZWh4In0.C3psH1VfR4oppchZgKj8og"
+            mapStyle="streets"
+            latitude="-23.549943"
+            longitude="-46.649497"
+            hideCompass="true"
+            zoomLevel="15"
+            showUserLocation="true"
+            disableZoom="false"
+            disableRotation="false"
+            disableScroll="false"
+            disableTilt="false"
+            (mapReady)="onMapReady($event)">
+        </Mapbox>
+    </ContentView>
+    <ScrollView class="container" sdkExampleTitle sdkToggleNavButton>
+        <GridLayout class="m-15" rows="auto auto auto auto auto auto auto auto auto">
+            <FlexboxLayout row="0" class="m-5 list-item">
+                    <Label text="Quantas vítimas?" width="150" height="50"></Label>
+                    <CheckBox #CB1 text="1" checked="false" class="checkbox"></CheckBox>
+                    <CheckBox text="2" checked="false" class="checkbox"></CheckBox>
+                    <CheckBox text="3+" checked="false" class="checkbox"></CheckBox>
+            </FlexboxLayout>
+            <FlexboxLayout row="1" height="50" class="m-5 list-item">
+                <FlexboxLayout flexDirection="column" width="150" height="80">
+                    <Label text="Vítima(s)"></Label>
+                    <Label text="consciente(s)?"></Label>
+                </FlexboxLayout>
+                <CheckBox #CB1 text="SIM" checked="false" class="checkbox"></CheckBox>
+                <CheckBox text="NÃO" checked="false" class="checkbox"></CheckBox>
+            </FlexboxLayout>
+            <FlexboxLayout row="2" class="m-5 list-item">
+                <Label text="Abaixo de algo?" width="150" height="50"></Label>
+                <CheckBox #CB1 text="SIM" checked="false" class="checkbox"></CheckBox>
+                <CheckBox text="NÃO" checked="false" class="checkbox"></CheckBox>
+            </FlexboxLayout>
+            <FlexboxLayout row="3" class="m-5 list-item">
+                <Label text="Consegue Falar?" width="150" height="50"></Label>
+                <CheckBox #CB1 text="SIM" checked="false" class="checkbox"></CheckBox>
+                <CheckBox text="NÃO" checked="false" class="checkbox"></CheckBox>
+            </FlexboxLayout>
+            <FlexboxLayout row="4" class="m-5 list-item">
+                <Label text="Olhos está aberto?" width="150" height="50"></Label>
+                <CheckBox #CB1 text="SIM" checked="false" class="checkbox"></CheckBox>
+                <CheckBox text="NÃO" checked="false" class="checkbox"></CheckBox>
+            </FlexboxLayout>
+            <FlexboxLayout row="5" class="m-5 list-item">
+                <Label text="Responde estimulo?" width="150" height="50"></Label>
+                <CheckBox #CB1 text="SIM" checked="false" class="checkbox"></CheckBox>
+                <CheckBox text="NÃO" checked="false" class="checkbox"></CheckBox>
+            </FlexboxLayout>
+        </GridLayout>
+    </ScrollView>
+    <Button text="CRIAR CHAMADO" class="m-5 button-alert" (tap)="request()"></Button>
+</FlexboxLayout>
